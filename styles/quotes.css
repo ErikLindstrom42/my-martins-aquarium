@@ -4,4 +4,6 @@
 
 .quote {
     background-color: yellow;
+    border: 1px outset;
+    padding:.5em;
 }
