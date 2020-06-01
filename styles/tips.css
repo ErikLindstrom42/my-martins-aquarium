@@ -1,8 +1,11 @@
 .tipList {
     background-color: dodgerblue;
     height: 100%;
+    
 }
 
 .tip {
     background-color: royalblue;
+    border: 2px white dotted;
+    padding: 1em;
 }
