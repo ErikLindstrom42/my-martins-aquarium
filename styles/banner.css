@@ -1,9 +1,10 @@
 .banner {
-    background-color: darkgoldenrod;
+    background-color: #42B4E5;
 }
 
 .banner__title{
     font-family: "Comic Sans MS", "Comic Sans", cursive;
-    font-size: larger;
+    font-size: 30pt;
     text-align:center
+
 }

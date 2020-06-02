@@ -8,6 +8,7 @@
 .container {
     display: flex;
     flex-direction: column;
+    background-color: #5899B5;
 }
 
 .underTheBanner {
@@ -24,3 +25,4 @@
 .underTheBanner__right {
     flex: 1;
 }
+
