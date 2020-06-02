@@ -1,13 +1,24 @@
 .fishList {
-    background-color: mediumorchid;
+    background-color: #5ECBF9;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height:auto;
+    
 }
 
 .fish {
-    background-color: mediumvioletred;
+    background-color: #5ECBF9;
+    border: 2px darkblue solid;
+    border-radius: 25px;
+
 }
 
 
 .fish__picture {
+    padding-top:1em;
     max-width: 15rem;
     max-height: 15rem;
 }
+
