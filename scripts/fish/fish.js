@@ -12,7 +12,7 @@ const fishConverter = (fishObject) => {
         <div class="fish__details">
             <ul>
                 <li>Species: ${fishObject.species}</li>
-                <li>Length: ${fishObject.length}</li>
+                <li>Length: ${fishObject.size}</li>
                 <li>Name: ${fishObject.name}</li>
                 <li>Location: ${fishObject.location}</li>
                 <li>Food: ${fishObject.food}</li>
