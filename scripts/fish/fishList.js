@@ -19,7 +19,43 @@ representations, and putting in the browser
 //     }
 // }
 
+
+
 const fishArticleElement = document.querySelector(".fishList")
+
+const fishTypeDropdown = document.querySelector(".typeChoice")
+
+const clearFishList = () => contentTarget.innerHTML = ""
+
+fishTypeDropdown.addEventListener("change", clickEvent => {
+    // Get the value of the option chosen by the user
+    const userChoice = clickEvent.target.value
+
+    // If the user chose Holy, clear the list and only show holy fish
+    if (userChoice === "holy") {
+        clearFishList()
+        showHolyFish()
+        displayFish()
+    }
+    else if (userChoice === "soldier") {
+        clearFishList()
+        showHolyFish()
+        displayFish()
+    }
+    else if (userChoice === "plebs") {
+        clearFishList()
+        showHolyFish()
+        displayFish()
+    }
+
+    else {
+        clearFishList()
+        showOtherFish()
+        displayFish()
+    }
+    
+})
+
 
 const showHolyFish = () => {
     const fishObjectsArray = mostHolyFish()
@@ -52,9 +88,26 @@ const showOtherFish = () => {
 }
 
 
+// const fishList = () => {
+//     // Invoke all three functions here
+//     showHolyFish()
+//     showSoldierFish()
+//     showOtherFish()
+// }
+
+
 const fishList = () => {
-    // Invoke all three functions here
-    showHolyFish()
-    showSoldierFish()
-    showOtherFish()
+    getFish().then(
+        () => {
+            /*
+                If you don't invoke these functions inside this
+                callback function for the then() method, they won't
+                render anything because there is no data retrieved
+                from the API yet
+            */
+            showHolyFish()
+            showSoldierFish()
+            showCommonFish()
+        }
+    )
 }
